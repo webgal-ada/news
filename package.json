@@ -1,22 +1,14 @@
 {
-  "name": "news",
+  "name": "greeting-news",
   "version": "1.0.0",
-  "description": "",
-  "main": "script.js",
+  "description": "This exercise includes building the news page for the greeting app. ![alt text](https://github.com/ColorCode/web-fundamentals-sept-2019/blob/master/exercises/greeting-news/end-goal.png \"News\")",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/webgal-ada/news.git"
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/webgal-ada/news/issues"
-  },
-  "homepage": "https://github.com/webgal-ada/news#readme",
   "dependencies": {
     "live-server": "^1.2.1"
   }
