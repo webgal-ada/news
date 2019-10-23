@@ -23,14 +23,26 @@
           </section>
 
     <script>
-       n = new Date();
-          y = n.getFullYear();
-          m = n.getMonth() + 1;
-          d = n.getDate();
-          document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() +1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 
-          var dt = new Date();
-          document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+      var dt = new Date();
+      document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+
+      // LOGIC FOR GREETING BASED ON HOURS
+      var hour = dt.getHours();
+      if (hour < 12) {
+        console.log('Morning');
+      } else if (hour < 18) {
+        console.log('Afternoon')
+      } else {
+        console.log('Evening') 
+      }
+      // LOGIC FOR GREETING BASED ON HOURS
+
     </script>
     <script src="script.js"></script>
   </body>

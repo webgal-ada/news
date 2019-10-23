@@ -35,11 +35,17 @@ function addItemsToPage() {
     detailsDiv.className = "news-item__details";
     li.appendChild(detailsDiv);
 
+    //adding link for images
+    var link = document.createElement("a");
+    link.href = item.url;
+    link.className= "news-item__link";
+    detailsDiv.appendChild(link);
+
     // Add image to div detail
     var img = document.createElement("img");
     img.src = item.urlToImage;
     img.className = "news-item__image";
-    detailsDiv.appendChild(img);
+    link.appendChild(img);
 
     // Create Div for text
     var textDiv = document.createElement("div");
