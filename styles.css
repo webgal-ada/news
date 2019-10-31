@@ -64,7 +64,8 @@ header {
 }
 
 ul {
-     margin-top: 22px;
+     margin-top: 24px;
+     max-width: 400px;
 }
 
 .news-item__text {
@@ -81,7 +82,6 @@ ul {
 .news-item__details {
      display: flex;
      position: relative;
-     width: 360px;
      margin-bottom: 24px;
 }
 
